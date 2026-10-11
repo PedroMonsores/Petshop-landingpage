@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja — Do Pet Au Vet</title>
+  <meta name="description" content="Ração premium, brinquedos e essenciais para o seu pet." />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%236A2B58'/><g fill='white'><path d='M12 13.5c-2.6 0-5.3 1.9-5.3 4.2 0 1.4 1 2.3 2.4 2.3 1 0 1.9-.5 2.9-.5s1.9.5 2.9.5c1.4 0 2.4-.9 2.4-2.3 0-2.3-2.7-4.2-5.3-4.2Z'/><ellipse cx='6.2' cy='10.4' rx='2' ry='2.6'/><ellipse cx='17.8' cy='10.4' rx='2' ry='2.6'/><ellipse cx='9.6' cy='6.4' rx='2.1' ry='2.7'/><ellipse cx='14.4' cy='6.4' rx='2.1' ry='2.7'/></g></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%236A2B58'/><g fill='white'><path d='M12 13.5c-2.6 0-5.3 1.9-5.3 4.2 0 1.4 1 2.3 2.4 2.3 1 0 1.9-.5 2.9-.5s1.9.5 2.9.5c1.4 0 2.4-.9 2.4-2.3 0-2.3-2.7-4.2-5.3-4.2Z'/><ellipse cx='6.2' cy='10.4' rx='2' ry='2.6'/><ellipse cx='17.8' cy='10.4' rx='2' ry='2.6'/><ellipse cx='9.6' cy='6.4' rx='2.1' ry='2.7'/><ellipse cx='14.4' cy='6.4' rx='2.1' ry='2.7'/></g></svg>">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Loja — Do Pet Au Vet" />
+  <meta property="og:description" content="Ração premium, brinquedos e essenciais — curadoria da equipe." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:'#F1FAFD',100:'#DEF3FB',200:'#BAE6F5',300:'#8CD5EC',
+              400:'#5CBEE0',500:'#39A5CA',600:'#2D87A6',700:'#276B84',
+              800:'#23576A',900:'#1E4858'
+            },
+            plum: {
+              50:'#FBF4F9',100:'#F5E1EF',200:'#EBC5DD',300:'#D99DC2',
+              400:'#C06FA4',500:'#A04E86',600:'#82366C',700:'#6A2B58',
+              800:'#542248',900:'#411B39'
+            },
+            ink: { DEFAULT: '#0A0A0C', soft: '#4A4A52' },
+            cream: '#FBFCFE'
+          },
+          fontFamily: {
+            sans:    ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Baloo 2"', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 24px 50px -20px rgba(10,10,12,.28)',
+            card: '0 10px 30px -14px rgba(10,10,12,.18)'
+          },
+          borderRadius: { '4xl': '2.5rem' }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-cream font-sans text-ink antialiased selection:bg-brand-200 selection:text-ink">
+
+  <header class="sticky top-0 z-50 border-b border-plum-900/40 bg-plum-700 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-5 lg:gap-8 lg:px-8 lg:py-5" aria-label="Main">
+
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 lg:gap-4">
+        <span class="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-white text-plum-700 shadow-card sm:h-12 sm:w-12 lg:h-14 lg:w-14">
+          <svg class="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 13.5c-2.6 0-5.3 1.9-5.3 4.2 0 1.4 1 2.3 2.4 2.3 1 0 1.9-.5 2.9-.5s1.9.5 2.9.5c1.4 0 2.4-.9 2.4-2.3 0-2.3-2.7-4.2-5.3-4.2Z"/>
+            <ellipse cx="6.2" cy="10.4" rx="2" ry="2.6"/>
+            <ellipse cx="17.8" cy="10.4" rx="2" ry="2.6"/>
+            <ellipse cx="9.6" cy="6.4" rx="2.1" ry="2.7"/>
+            <ellipse cx="14.4" cy="6.4" rx="2.1" ry="2.7"/>
+          </svg>
+        </span>
+        <span class="whitespace-nowrap font-display text-lg font-extrabold leading-none text-white sm:text-2xl lg:text-3xl">
+          Do Pet <span class="text-brand-300">Au Vet</span>
+        </span>
+      </a>
+
+      <ul class="hidden items-center gap-10 text-base font-semibold lg:flex">
+        <li><a href="servicos.html" class="text-white/90 transition hover:text-brand-300">Serviços</a></li>
+        <li><a href="loja.html"     class="text-brand-300">Loja</a></li>
+        <li><a href="index.html#testimonials" class="text-white/90 transition hover:text-brand-300">Avaliações</a></li>
+        <li><a href="index.html#faq"          class="text-white/90 transition hover:text-brand-300">FAQ</a></li>
+      </ul>
+
+      <div class="hidden items-center gap-3 lg:flex">
+        <a href="https://instagram.com/dopetauvet" target="_blank" rel="noopener" aria-label="Instagram"
+           class="grid h-11 w-11 place-items-center rounded-xl border border-white/25 text-white transition hover:border-white hover:bg-white hover:text-plum-700">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+          </svg>
+        </a>
+
+        <span class="h-6 w-px bg-white/25" aria-hidden="true"></span>
+
+        <a href="tel:+15551234567" class="flex items-center gap-2 text-base font-semibold text-white transition hover:text-brand-300">
+          <svg class="h-5 w-5 text-brand-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/>
+          </svg>
+          (555) 123-4567
+        </a>
+
+        <a href="https://wa.me/5551234567" target="_blank" rel="noopener" aria-label="WhatsApp"
+           class="grid h-11 w-11 place-items-center rounded-xl border border-white/25 text-white transition hover:border-white hover:bg-white hover:text-plum-700">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.5-5.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z"/>
+          </svg>
+        </a>
+
+        <a href="index.html#booking" class="ml-1 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-plum-700 shadow-card transition hover:bg-brand-100 hover:text-plum-800">
+          Agende agora
+        </a>
+      </div>
+
+      <div class="flex items-center gap-2 lg:hidden">
+        <a href="https://instagram.com/dopetauvet" target="_blank" rel="noopener" aria-label="Instagram"
+           class="grid h-10 w-10 place-items-center rounded-xl border border-white/25 text-white transition hover:border-white hover:bg-white hover:text-plum-700 active:scale-95">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+          </svg>
+        </a>
+
+        <a href="https://wa.me/5551234567" target="_blank" rel="noopener" aria-label="WhatsApp"
+           class="grid h-10 w-10 place-items-center rounded-xl border border-white/25 text-white transition hover:border-white hover:bg-white hover:text-plum-700 active:scale-95">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.5-5.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z"/>
+          </svg>
+        </a>
+
+        <button id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"
+                class="relative grid h-10 w-10 place-items-center rounded-xl border border-white/25 text-white transition active:scale-95">
+          <span class="sr-only">Abrir menu</span>
+          <span class="absolute -right-1 -top-1 h-3 w-3 animate-pulse rounded-full bg-brand-300 ring-2 ring-plum-700" aria-hidden="true"></span>
+
+          <svg id="icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18"/>
+          </svg>
+          <svg id="icon-close" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden border-t border-plum-900/40 bg-plum-700 lg:hidden">
+      <div class="max-h-[calc(100vh-5rem)] overflow-y-auto px-5 pb-8 pt-5">
+
+        <p class="px-2 text-[11px] font-bold uppercase tracking-widest text-white/40">Navegação</p>
+
+        <ul class="mt-3 space-y-1">
+          <li>
+            <a href="servicos.html" class="flex items-center gap-4 rounded-2xl px-3 py-3.5 text-white transition active:bg-white/10 hover:bg-white/5">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/>
+                  <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/>
+                </svg>
+              </span>
+              <span class="flex-1 text-base font-semibold">Serviços</span>
+              <svg class="h-4 w-4 text-white/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="loja.html" class="flex items-center gap-4 rounded-2xl bg-white/10 px-3 py-3.5 text-white transition active:bg-white/15 hover:bg-white/15">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+              </span>
+              <span class="flex-1 text-base font-semibold">Loja</span>
+              <svg class="h-4 w-4 text-white/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#testimonials" class="flex items-center gap-4 rounded-2xl px-3 py-3.5 text-white transition active:bg-white/10 hover:bg-white/5">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z"/>
+                </svg>
+              </span>
+              <span class="flex-1 text-base font-semibold">Avaliações</span>
+              <svg class="h-4 w-4 text-white/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#faq" class="flex items-center gap-4 rounded-2xl px-3 py-3.5 text-white transition active:bg-white/10 hover:bg-white/5">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/>
+                </svg>
+              </span>
+              <span class="flex-1 text-base font-semibold">FAQ</span>
+              <svg class="h-4 w-4 text-white/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="mt-7 px-2 text-[11px] font-bold uppercase tracking-widest text-white/40">Fale conosco</p>
+
+        <div class="mt-3 grid grid-cols-2 gap-2.5">
+          <a href="tel:+15551234567" class="flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-4 py-3.5 text-sm font-semibold text-white transition active:scale-95 hover:bg-white/15">
+            <svg class="h-4 w-4 text-brand-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/>
+            </svg>
+            Ligar
+          </a>
+
+          <a href="https://wa.me/5551234567" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-4 py-3.5 text-sm font-semibold text-white transition active:scale-95 hover:bg-white/15">
+            <svg class="h-4 w-4 text-brand-300" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.5-5.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+
+        <a href="index.html#booking" class="mt-6 flex items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-base font-bold text-plum-700 shadow-card transition active:scale-[0.98]">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>
+          </svg>
+          Agende agora
+        </a>
+
+        <p class="mt-6 flex items-center justify-center gap-2 text-center text-xs text-white/50">
+          <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+          </svg>
+          Seg–Sáb · 8h às 19h
+        </p>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="relative overflow-hidden border-b border-ink/5">
+    <div class="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-brand-200/40 blur-3xl"></div>
+    <div class="pointer-events-none absolute -right-20 -bottom-10 h-80 w-80 rounded-full bg-plum-200/40 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-20">
+      <nav class="text-xs font-semibold uppercase tracking-widest text-ink-soft" aria-label="Breadcrumb">
+        <a href="index.html" class="transition hover:text-brand-500">Início</a>
+        <span class="mx-2">/</span>
+        <span class="text-ink">Loja</span>
+      </nav>
+
+      <div class="mt-5 grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-end">
+        <div>
+          <h1 class="max-w-3xl font-display text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
+            Produtos escolhidos a dedo para o seu pet
+          </h1>
+          <p class="mt-5 max-w-2xl text-lg text-ink-soft">
+            Ração premium, brinquedos, camas e essenciais — todos testados e aprovados pelos nossos próprios pets.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-3 lg:justify-end">
+          <span class="rounded-full bg-brand-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-ink">4 categorias</span>
+          <span class="rounded-full bg-plum-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-ink">Curadoria da equipe</span>
+          <span class="rounded-full bg-brand-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-ink">Retirada na loja</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-24">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+        <!-- PRODUTO 1 -->
+        <article class="group flex flex-col rounded-3xl border border-ink/5 bg-white p-3 shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-soft">
+          <div class="relative aspect-square overflow-hidden rounded-2xl bg-brand-50">
+            <img src="images/products/product-1.jpg"
+                 alt="Ração Salmão &amp; Proteína"
+                 loading="lazy"
+                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <span class="absolute left-3 top-3 rounded-full bg-plum-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white">Best seller</span>
+          </div>
+          <div class="flex flex-1 flex-col p-4">
+            <p class="text-xs font-bold uppercase tracking-wide text-ink">Nutrição</p>
+            <h3 class="mt-1.5 font-display text-lg font-bold leading-snug">Salmão</h3>
+            <p class="mt-1 text-sm text-ink-soft">Rico em ômega-3, para pelagem brilhante e pele saudável.</p>
+            <div class="mt-auto pt-5 border-t border-ink/5">
+              <p class="font-display text-2xl font-extrabold text-ink">R$ 29,90</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 2 -->
+        <article class="group flex flex-col rounded-3xl border border-ink/5 bg-white p-3 shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-soft">
+          <div class="relative aspect-square overflow-hidden rounded-2xl bg-brand-50">
+            <img src="images/products/product-2.jpg"
+                 alt="Osso de Borracha Resistente à Mastigação"
+                 loading="lazy"
+                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <span class="absolute left-3 top-3 rounded-full bg-plum-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white">Novo</span>
+          </div>
+          <div class="flex flex-1 flex-col p-4">
+            <p class="text-xs font-bold uppercase tracking-wide text-ink">Brinquedos</p>
+            <h3 class="mt-1.5 font-display text-lg font-bold leading-snug">Osso de Borracha Resistente</h3>
+            <p class="mt-1 text-sm text-ink-soft">Para mastigadores agressivos. Tamanhos S–XL.</p>
+            <div class="mt-auto pt-5 border-t border-ink/5">
+              <p class="font-display text-2xl font-extrabold text-ink">R$ 14,50</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 3 -->
+        <article class="group flex flex-col rounded-3xl border border-ink/5 bg-white p-3 shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-soft">
+          <div class="relative aspect-square overflow-hidden rounded-2xl bg-brand-50">
+            <img src="images/products/product-3.jpg"
+                 alt="Cama Ortopédica de Memória"
+                 loading="lazy"
+                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+          </div>
+          <div class="flex flex-1 flex-col p-4">
+            <p class="text-xs font-bold uppercase tracking-wide text-ink">Conforto</p>
+            <h3 class="mt-1.5 font-display text-lg font-bold leading-snug">Cama Ortopédica de Memória</h3>
+            <p class="mt-1 text-sm text-ink-soft">Capa lavável, suporte articular para pets idosos.</p>
+            <div class="mt-auto pt-5 border-t border-ink/5">
+              <p class="font-display text-2xl font-extrabold text-ink">R$ 100,00</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 4 -->
+        <article class="group flex flex-col rounded-3xl border border-ink/5 bg-white p-3 shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-soft">
+          <div class="relative aspect-square overflow-hidden rounded-2xl bg-brand-50">
+            <img src="images/products/product-4.jpg"
+                 alt="Shampoo de Aveia 500ml"
+                 loading="lazy"
+                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <span class="absolute left-3 top-3 rounded-full bg-plum-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white">-20%</span>
+          </div>
+          <div class="flex flex-1 flex-col p-4">
+            <p class="text-xs font-bold uppercase tracking-wide text-ink">Higiene</p>
+            <h3 class="mt-1.5 font-display text-lg font-bold leading-snug">Shampoo de Aveia 500ml</h3>
+            <p class="mt-1 text-sm text-ink-soft">Para pele sensível e com coceira. Hipoalergênico.</p>
+            <div class="mt-auto pt-5 border-t border-ink/5">
+              <p class="font-display text-2xl font-extrabold text-ink">R$ 18,00</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 5 -->
+        <article class="group flex flex-col rounded-3xl border border-ink/5 bg-white p-3 shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-soft">
+          <div class="relative aspect-square overflow-hidden rounded-2xl bg-brand-50">
+            <img src="images/products/product-5.jpg"
+                 alt="Ração Natural Filhotes 2kg"
+                 loading="lazy"
+                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+          </div>
+          <div class="flex flex-1 flex-col p-4">
+            <p class="text-xs font-bold uppercase tracking-wide text-ink">Nutrição</p>
+            <h3 class="mt-1.5 font-display text-lg font-bold leading-snug">Ração Natural Filhotes 2kg</h3>
+            <p class="mt-1 text-sm text-ink-soft">Grãos selecionados, sem corantes artificiais.</p>
+            <div class="mt-auto pt-5 border-t border-ink/5">
+              <p class="font-display text-2xl font-extrabold text-ink">R$ 89,00</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 6 -->
+        <article class="group flex flex-col rounded-3xl border border-ink/5 bg-white p-3 shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-soft">
+          <div class="relative aspect-square overflow-hidden rounded-2xl bg-brand-50">
+            <img src="images/products/product-6.jpg"
+                 alt="Coleira Antipulgas Ajustável"
+                 loading="lazy"
+                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <span class="absolute left-3 top-3 rounded-full bg-plum-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white">Novo</span>
+          </div>
+          <div class="flex flex-1 flex-col p-4">
+            <p class="text-xs font-bold uppercase tracking-wide text-ink">Acessórios</p>
+            <h3 class="mt-1.5 font-display text-lg font-bold leading-snug">Coleira Antipulgas Ajustável</h3>
+            <p class="mt-1 text-sm text-ink-soft">Proteção prolongada por até 5 meses.</p>
+            <div class="mt-auto pt-5 border-t border-ink/5">
+              <p class="font-display text-2xl font-extrabold text-ink">R$ 45,00</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 7 -->
+        <article class="group flex flex-col rounded-3xl border border-ink/5 bg-white p-3 shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-soft">
+          <div class="relative aspect-square overflow-hidden rounded-2xl bg-brand-50">
+            <img src="images/products/product-7.jpg"
+                 alt="Varinha Interativa para Gatos"
+                 loading="lazy"
+                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+          </div>
+          <div class="flex flex-1 flex-col p-4">
+            <p class="text-xs font-bold uppercase tracking-wide text-ink">Brinquedos</p>
+            <h3 class="mt-1.5 font-display text-lg font-bold leading-snug">Varinha Interativa para Gatos</h3>
+            <p class="mt-1 text-sm text-ink-soft">Peninhas naturais e guizo. Estimula o instinto de caça.</p>
+            <div class="mt-auto pt-5 border-t border-ink/5">
+              <p class="font-display text-2xl font-extrabold text-ink">R$ 22,00</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 8 -->
+        <article class="group flex flex-col rounded-3xl border border-ink/5 bg-white p-3 shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-soft">
+          <div class="relative aspect-square overflow-hidden rounded-2xl bg-brand-50">
+            <img src="images/products/product-8.jpg"
+                 alt="Tapete Higiênico 30 unidades"
+                 loading="lazy"
+                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+          </div>
+          <div class="flex flex-1 flex-col p-4">
+            <p class="text-xs font-bold uppercase tracking-wide text-ink">Higiene</p>
+            <h3 class="mt-1.5 font-display text-lg font-bold leading-snug">Tapete Higiênico 30un</h3>
+            <p class="mt-1 text-sm text-ink-soft">Alta absorção e controle de odor.</p>
+            <div class="mt-auto pt-5 border-t border-ink/5">
+              <p class="font-display text-2xl font-extrabold text-ink">R$ 39,90</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="mt-12 text-center text-sm text-ink-soft">
+        Os preços exibidos são de amostra. Visite nossa loja física para conferir disponibilidade e valores atualizados.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-20 lg:pb-28">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+      <div class="relative overflow-hidden rounded-4xl bg-ink px-6 py-16 text-center sm:px-12 lg:py-20">
+        <div class="pointer-events-none absolute -left-16 -top-16 h-64 w-64 rounded-full bg-plum-600/30 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-20 -right-10 h-72 w-72 rounded-full bg-brand-500/25 blur-3xl"></div>
+
+        <div class="relative mx-auto max-w-2xl">
+          <h2 class="font-display text-3xl font-extrabold leading-tight text-white sm:text-4xl lg:text-5xl">Encontrou o que procurava?</h2>
+          <p class="mx-auto mt-5 max-w-xl text-lg text-white/70">Visite nossa loja física ou fale com a equipe para reservar o seu pedido.</p>
+          <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+            <a href="index.html#booking" class="inline-flex items-center justify-center gap-2 rounded-full bg-plum-600 px-8 py-4 font-bold text-white shadow-soft transition hover:bg-plum-500">
+              Falar com a equipe
+            </a>
+            <a href="servicos.html" class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/20 px-8 py-4 font-bold text-white transition hover:border-white/50 hover:bg-white/5">
+              Ver serviços
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-ink/5 bg-ink text-white/70">
+    <div class="mx-auto max-w-7xl px-5 py-16 lg:px-8">
+      <div class="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.4fr]">
+
+        <div>
+          <a href="index.html" class="flex items-center gap-2.5">
+            <span class="grid h-11 w-11 place-items-center rounded-2xl bg-plum-600 text-white">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 13.5c-2.6 0-5.3 1.9-5.3 4.2 0 1.4 1 2.3 2.4 2.3 1 0 1.9-.5 2.9-.5s1.9.5 2.9.5c1.4 0 2.4-.9 2.4-2.3 0-2.3-2.7-4.2-5.3-4.2Z"/>
+                <ellipse cx="6.2" cy="10.4" rx="2" ry="2.6"/><ellipse cx="17.8" cy="10.4" rx="2" ry="2.6"/>
+                <ellipse cx="9.6" cy="6.4" rx="2.1" ry="2.7"/><ellipse cx="14.4" cy="6.4" rx="2.1" ry="2.7"/>
+              </svg>
+            </span>
+            <span class="font-display text-2xl font-extrabold text-white">Do Pet <span class="text-brand-400">Au Vet</span></span>
+          </a>
+          <p class="mt-5 max-w-xs text-sm leading-relaxed">
+            Clínica veterinária e petshop no coração da Jatiúca. Cuidado, amor e bem-estar — tudo em um só lugar.
+          </p>
+          <div class="mt-6 flex gap-3">
+            <a href="https://instagram.com/dopetauvet" target="_blank" rel="noopener" aria-label="Instagram"
+               class="grid h-10 w-10 place-items-center rounded-xl bg-white/5 transition hover:bg-plum-600 hover:text-white">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="https://wa.me/5551234567" target="_blank" rel="noopener" aria-label="WhatsApp"
+               class="grid h-10 w-10 place-items-center rounded-xl bg-white/5 transition hover:bg-plum-600 hover:text-white">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.5-5.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-display text-lg font-bold text-white">Serviços</h3>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a href="servicos.html#banho"    class="transition hover:text-brand-300">Banho &amp; Tosa</a></li>
+            <li><a href="servicos.html#veter"    class="transition hover:text-brand-300">Cuidados Veterinários</a></li>
+            <li><a href="servicos.html#daycare"  class="transition hover:text-brand-300">Creche &amp; Hospedagem</a></li>
+            <li><a href="servicos.html#training" class="transition hover:text-brand-300">Treinamento</a></li>
+            <li><a href="servicos.html#taxi"     class="transition hover:text-brand-300">Táxi para Pets</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-display text-lg font-bold text-white">Empresa</h3>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a href="index.html"              class="transition hover:text-brand-300">Início</a></li>
+            <li><a href="loja.html"               class="transition hover:text-brand-300">Loja</a></li>
+            <li><a href="index.html#testimonials" class="transition hover:text-brand-300">Avaliações</a></li>
+            <li><a href="index.html#faq"          class="transition hover:text-brand-300">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-display text-lg font-bold text-white">Contato</h3>
+          <ul class="mt-5 space-y-3.5 text-sm">
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Rua Estudante Carlos Moura Gama, 123, Jatiúca
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+              (555) 123-4567
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+              email@dopetauvet.com
+            </li>
+          </ul>
+
+          <form class="mt-6" action="https://formspree.io/f/SEU_ID" method="POST">
+            <label for="newsletter" class="text-xs font-bold uppercase tracking-widest text-white/50">Newsletter</label>
+            <div class="mt-2 flex gap-2">
+              <input id="newsletter" name="email" type="email" required placeholder="seu@email.com"
+                     class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/35 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500/30" />
+              <button type="submit" class="shrink-0 rounded-xl bg-plum-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-plum-500">
+                Inscrever-se
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm sm:flex-row">
+        <p>© 2026 Do Pet Au Vet. Todos os direitos reservados.</p>
+        <div class="flex gap-6">
+          <a href="#" class="transition hover:text-brand-300">Política de Privacidade</a>
+          <a href="#" class="transition hover:text-brand-300">Termos de Serviço</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const btn       = document.getElementById('menu-btn');
+      const menu      = document.getElementById('mobile-menu');
+      const iconOpen  = document.getElementById('icon-open');
+      const iconClose = document.getElementById('icon-close');
+      if (!btn || !menu) return;
+
+      function closeMenu() {
+        menu.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+
+      btn.addEventListener('click', function () {
+        const isHidden = menu.classList.toggle('hidden');
+        const isOpen   = !isHidden;
+        iconOpen.classList.toggle('hidden', isOpen);
+        iconClose.classList.toggle('hidden', !isOpen);
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeMenu();
+      });
+    })();
+  </script>
+
+</body>
+</html>

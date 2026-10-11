@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Do Pet Au Vet — Clínica Veterinária e Pet Shop</title>
+  <meta name="description" content="Cuidado, amor e bem estar. Tudo em um só lugar." />
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%236A2B58'/><g fill='white'><path d='M12 13.5c-2.6 0-5.3 1.9-5.3 4.2 0 1.4 1 2.3 2.4 2.3 1 0 1.9-.5 2.9-.5s1.9.5 2.9.5c1.4 0 2.4-.9 2.4-2.3 0-2.3-2.7-4.2-5.3-4.2Z'/><ellipse cx='6.2' cy='10.4' rx='2' ry='2.6'/><ellipse cx='17.8' cy='10.4' rx='2' ry='2.6'/><ellipse cx='9.6' cy='6.4' rx='2.1' ry='2.7'/><ellipse cx='14.4' cy='6.4' rx='2.1' ry='2.7'/></g></svg>">
+  <link rel="apple-touch-icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%236A2B58'/><g fill='white'><path d='M12 13.5c-2.6 0-5.3 1.9-5.3 4.2 0 1.4 1 2.3 2.4 2.3 1 0 1.9-.5 2.9-.5s1.9.5 2.9.5c1.4 0 2.4-.9 2.4-2.3 0-2.3-2.7-4.2-5.3-4.2Z'/><ellipse cx='6.2' cy='10.4' rx='2' ry='2.6'/><ellipse cx='17.8' cy='10.4' rx='2' ry='2.6'/><ellipse cx='9.6' cy='6.4' rx='2.1' ry='2.7'/><ellipse cx='14.4' cy='6.4' rx='2.1' ry='2.7'/></g></svg>">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Do Pet Au Vet — Clínica Veterinária e Pet Shop" />
+  <meta property="og:description"
+    content="Cuidado, amor e bem-estar para o seu pet. Banho, tosa, veterinária e loja completa." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#F1FAFD', 100: '#DEF3FB', 200: '#BAE6F5', 300: '#8CD5EC',
+              400: '#5CBEE0', 500: '#39A5CA', 600: '#2D87A6', 700: '#276B84',
+              800: '#23576A', 900: '#1E4858'
+            },
+            plum: {
+              50: '#FBF4F9', 100: '#F5E1EF', 200: '#EBC5DD', 300: '#D99DC2',
+              400: '#C06FA4', 500: '#A04E86', 600: '#82366C', 700: '#6A2B58',
+              800: '#542248', 900: '#411B39'
+            },
+            ink: { DEFAULT: '#0A0A0C', soft: '#4A4A52' },
+            cream: '#FBFCFE'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Baloo 2"', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 24px 50px -20px rgba(10,10,12,.28)',
+            card: '0 10px 30px -14px rgba(10,10,12,.18)'
+          },
+          borderRadius: { '4xl': '2.5rem' }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-cream font-sans text-ink antialiased selection:bg-brand-200 selection:text-ink">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-plum-900/40 bg-plum-700 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-5 lg:gap-8 lg:px-8 lg:py-5"
+      aria-label="Main">
+
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 lg:gap-4">
+        <span
+          class="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-white text-plum-700 shadow-card sm:h-12 sm:w-12 lg:h-14 lg:w-14">
+          <svg class="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 13.5c-2.6 0-5.3 1.9-5.3 4.2 0 1.4 1 2.3 2.4 2.3 1 0 1.9-.5 2.9-.5s1.9.5 2.9.5c1.4 0 2.4-.9 2.4-2.3 0-2.3-2.7-4.2-5.3-4.2Z" />
+            <ellipse cx="6.2" cy="10.4" rx="2" ry="2.6" />
+            <ellipse cx="17.8" cy="10.4" rx="2" ry="2.6" />
+            <ellipse cx="9.6" cy="6.4" rx="2.1" ry="2.7" />
+            <ellipse cx="14.4" cy="6.4" rx="2.1" ry="2.7" />
+          </svg>
+        </span>
+        <span
+          class="whitespace-nowrap font-display text-lg font-extrabold leading-none text-white sm:text-2xl lg:text-3xl">
+          Do Pet <span class="text-brand-300">Au Vet</span>
+        </span>
+      </a>
+
+      <ul class="hidden items-center gap-10 text-base font-semibold lg:flex">
+        <li><a href="servicos.html" class="text-white/90 transition hover:text-brand-300">Serviços</a></li>
+        <li><a href="loja.html" class="text-white/90 transition hover:text-brand-300">Loja</a></li>
+        <li><a href="#testimonials" class="text-white/90 transition hover:text-brand-300">Avaliações</a></li>
+        <li><a href="#faq" class="text-white/90 transition hover:text-brand-300">FAQ</a></li>
+      </ul>
+
+      <div class="hidden items-center gap-3 lg:flex">
+        <a href="https://instagram.com/dopetauvet" target="_blank" rel="noopener" aria-label="Instagram"
+          class="grid h-11 w-11 place-items-center rounded-xl border border-white/25 text-white transition hover:border-white hover:bg-white hover:text-plum-700">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+          </svg>
+        </a>
+
+        <span class="h-6 w-px bg-white/25" aria-hidden="true"></span>
+
+        <a href="tel:+15551234567"
+          class="flex items-center gap-2 text-base font-semibold text-white transition hover:text-brand-300">
+          <svg class="h-5 w-5 text-brand-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+          </svg>
+          (555) 123-4567
+        </a>
+
+        <a href="https://wa.me/5551234567" target="_blank" rel="noopener" aria-label="WhatsApp"
+          class="grid h-11 w-11 place-items-center rounded-xl border border-white/25 text-white transition hover:border-white hover:bg-white hover:text-plum-700">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.5-5.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z" />
+          </svg>
+        </a>
+
+        <a href="#booking"
+          class="ml-1 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-plum-700 shadow-card transition hover:bg-brand-100 hover:text-plum-800">
+          Agende agora
+        </a>
+      </div>
+
+      <div class="flex items-center gap-2 lg:hidden">
+        <a href="https://instagram.com/dopetauvet" target="_blank" rel="noopener" aria-label="Instagram"
+          class="grid h-10 w-10 place-items-center rounded-xl border border-white/25 text-white transition hover:border-white hover:bg-white hover:text-plum-700 active:scale-95">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+          </svg>
+        </a>
+
+        <a href="https://wa.me/5551234567" target="_blank" rel="noopener" aria-label="WhatsApp"
+          class="grid h-10 w-10 place-items-center rounded-xl border border-white/25 text-white transition hover:border-white hover:bg-white hover:text-plum-700 active:scale-95">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.5-5.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z" />
+          </svg>
+        </a>
+
+        <button id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"
+          class="relative grid h-10 w-10 place-items-center rounded-xl border border-white/25 text-white transition active:scale-95">
+          <span class="sr-only">Abrir menu</span>
+          <span class="absolute -right-1 -top-1 h-3 w-3 animate-pulse rounded-full bg-brand-300 ring-2 ring-plum-700"
+            aria-hidden="true"></span>
+
+          <svg id="icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+          <svg id="icon-close" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden border-t border-plum-900/40 bg-plum-700 lg:hidden">
+      <div class="max-h-[calc(100vh-5rem)] overflow-y-auto px-5 pb-8 pt-5">
+
+        <p class="px-2 text-[11px] font-bold uppercase tracking-widest text-white/40">Navegação</p>
+
+        <ul class="mt-3 space-y-1">
+          <li>
+            <a href="servicos.html"
+              class="flex items-center gap-4 rounded-2xl px-3 py-3.5 text-white transition active:bg-white/10 hover:bg-white/5">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3" />
+                  <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4" />
+                  <circle cx="20" cy="10" r="2" />
+                </svg>
+              </span>
+              <span class="flex-1 text-base font-semibold">Serviços</span>
+              <svg class="h-4 w-4 text-white/40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="loja.html"
+              class="flex items-center gap-4 rounded-2xl px-3 py-3.5 text-white transition active:bg-white/10 hover:bg-white/5">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                  <path d="M3 6h18M16 10a4 4 0 0 1-8 0" />
+                </svg>
+              </span>
+              <span class="flex-1 text-base font-semibold">Loja</span>
+              <svg class="h-4 w-4 text-white/40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="#testimonials"
+              class="flex items-center gap-4 rounded-2xl px-3 py-3.5 text-white transition active:bg-white/10 hover:bg-white/5">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+                </svg>
+              </span>
+              <span class="flex-1 text-base font-semibold">Avaliações</span>
+              <svg class="h-4 w-4 text-white/40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="#faq"
+              class="flex items-center gap-4 rounded-2xl px-3 py-3.5 text-white transition active:bg-white/10 hover:bg-white/5">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                  <path d="M12 17h.01" />
+                </svg>
+              </span>
+              <span class="flex-1 text-base font-semibold">FAQ</span>
+              <svg class="h-4 w-4 text-white/40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="mt-7 px-2 text-[11px] font-bold uppercase tracking-widest text-white/40">Fale conosco</p>
+
+        <div class="mt-3 grid grid-cols-2 gap-2.5">
+          <a href="tel:+15551234567"
+            class="flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-4 py-3.5 text-sm font-semibold text-white transition active:scale-95 hover:bg-white/15">
+            <svg class="h-4 w-4 text-brand-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+            </svg>
+            Ligar
+          </a>
+
+          <a href="https://wa.me/5551234567" target="_blank" rel="noopener"
+            class="flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-4 py-3.5 text-sm font-semibold text-white transition active:scale-95 hover:bg-white/15">
+            <svg class="h-4 w-4 text-brand-300" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.5-5.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z" />
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+
+        <a href="#booking"
+          class="mt-6 flex items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-base font-bold text-plum-700 shadow-card transition active:scale-[0.98]">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" />
+            <path d="M16 2v4M8 2v4M3 10h18" />
+          </svg>
+          Agende agora
+        </a>
+
+        <p class="mt-6 flex items-center justify-center gap-2 text-center text-xs text-white/50">
+          <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 6v6l4 2" />
+          </svg>
+          Seg–Sáb · 8h às 19h
+        </p>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-brand-200/40 blur-3xl"></div>
+    <div class="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-brand-100 blur-3xl"></div>
+
+    <div
+      class="relative mx-auto grid max-w-7xl items-center gap-14 px-5 py-16 lg:grid-cols-2 lg:gap-10 lg:px-8 lg:py-24">
+      <div class="max-w-xl">
+        <span
+          class="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-ink">
+          <span class="h-2 w-2 animate-pulse rounded-full bg-plum-500"></span>
+          Confiado por mais de 1000 tutores
+        </span>
+
+        <h1 class="mt-6 font-display text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl">
+          Pets felizes,
+          <span class="relative whitespace-nowrap">
+            Casas felizes.
+            <svg class="absolute -bottom-2 left-0 h-3 w-full text-brand-300" viewBox="0 0 200 12"
+              preserveAspectRatio="none" aria-hidden="true">
+              <path d="M2 9C40 3 160 3 198 9" fill="none" stroke="currentColor" stroke-width="4"
+                stroke-linecap="round" />
+            </svg>
+          </span>
+        </h1>
+
+        <p class="mt-6 text-lg leading-relaxed text-ink-soft">
+          Cuidado, amor e bem-estar. Tudo em um só lugar. Agende uma visita e descubra como podemos ajudar seu pet a
+          viver mais feliz e saudável.
+        </p>
+
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="#booking"
+            class="inline-flex items-center justify-center gap-2 rounded-full bg-plum-600 px-8 py-4 font-bold text-white shadow-soft transition hover:bg-plum-700 hover:shadow-lg">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <path d="M16 2v4M8 2v4M3 10h18" />
+            </svg>
+            Agende sua visita
+          </a>
+          <a href="servicos.html"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-ink/10 bg-white px-8 py-4 font-bold text-ink transition hover:border-ink/25">
+            Veja nossos serviços
+          </a>
+        </div>
+
+        <div class="mt-9 flex items-center gap-4">
+          <div class="flex -space-x-3">
+            <span
+              class="grid h-11 w-11 place-items-center rounded-full border-2 border-cream bg-brand-200 text-xs font-bold text-ink">JD</span>
+            <span
+              class="grid h-11 w-11 place-items-center rounded-full border-2 border-cream bg-brand-300 text-xs font-bold text-ink">MK</span>
+            <span
+              class="grid h-11 w-11 place-items-center rounded-full border-2 border-cream bg-plum-500 text-xs font-bold text-white">RS</span>
+            <span
+              class="grid h-11 w-11 place-items-center rounded-full border-2 border-cream bg-ink text-xs font-bold text-white">+2k</span>
+          </div>
+          <div class="text-sm">
+            <div class="flex items-center gap-1 text-plum-500">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+            </div>
+            <p class="mt-0.5 font-semibold">4.9/5 <span class="font-normal text-ink-soft">· 480+ reviews</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative mx-auto w-full max-w-lg lg:max-w-none">
+        <div class="aspect-[4/5] w-full overflow-hidden rounded-4xl bg-brand-100 shadow-soft">
+          <img src="images/hero-image.jpg" alt="Tutora abraçando seu pet" class="h-full w-full object-cover" />
+        </div>
+
+        <div
+          class="animate-floaty absolute -left-4 top-10 hidden items-center gap-3 rounded-2xl bg-white/95 p-3.5 shadow-soft backdrop-blur sm:flex lg:-left-8">
+          <span class="grid h-11 w-11 place-items-center rounded-xl bg-brand-100 text-brand-500">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+            </svg>
+          </span>
+          <div class="leading-tight">
+            <p class="font-display text-lg font-extrabold">4.9 rating</p>
+            <p class="text-xs text-ink-soft">De tutores felizes</p>
+          </div>
+        </div>
+
+        <div
+          class="animate-floaty-slow absolute -right-4 bottom-10 hidden items-center gap-3 rounded-2xl bg-white/95 p-3.5 shadow-soft backdrop-blur sm:flex lg:-right-8">
+          <span class="grid h-11 w-11 place-items-center rounded-xl bg-plum-100 text-plum-600">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6 9 17l-5-5" />
+            </svg>
+          </span>
+          <div class="leading-tight">
+            <p class="font-display text-lg font-extrabold">Próximo horário hoje</p>
+            <p class="text-xs text-ink-soft">15:30 · Tosa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-y border-ink/5 bg-white">
+    <div class="mx-auto grid max-w-7xl grid-cols-2 gap-y-10 px-5 py-12 lg:grid-cols-4 lg:px-8">
+      <div class="text-center lg:border-r lg:border-ink/5">
+        <p class="font-display text-4xl font-extrabold text-ink">12+</p>
+        <p class="mt-1 text-sm font-medium text-ink-soft">Anos cuidando dos pets</p>
+      </div>
+      <div class="text-center lg:border-r lg:border-ink/5">
+        <p class="font-display text-4xl font-extrabold text-ink">2.000+</p>
+        <p class="mt-1 text-sm font-medium text-ink-soft">Tutores felizes</p>
+      </div>
+      <div class="text-center lg:border-r lg:border-ink/5">
+        <p class="font-display text-4xl font-extrabold text-ink">30+</p>
+        <p class="mt-1 text-sm font-medium text-ink-soft">Marcas Premium</p>
+      </div>
+      <div class="text-center">
+        <p class="font-display text-4xl font-extrabold text-ink">24/7</p>
+        <p class="mt-1 text-sm font-medium text-ink-soft">Suporte de emergência</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <span
+          class="inline-block rounded-full bg-brand-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-ink">Como
+          podemos ajudar?</span>
+        <h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl lg:text-5xl">Duas formas de cuidar do seu pet
+        </h2>
+        <p class="mt-4 text-lg text-ink-soft">Precisa de um serviço profissional ou quer renovar os produtos? Escolha o
+          caminho — estamos prontos dos dois jeitos.</p>
+      </div>
+
+      <div class="mt-14 grid gap-6 lg:grid-cols-2">
+
+        <article
+          class="group relative flex flex-col overflow-hidden rounded-4xl border border-plum-200 bg-gradient-to-br from-plum-50 via-white to-white p-8 shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-soft lg:p-10">
+          <div class="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-plum-200/50 blur-3xl">
+          </div>
+          <div class="relative">
+            <div class="flex items-start justify-between gap-4">
+              <span class="grid h-16 w-16 place-items-center rounded-2xl bg-plum-600 text-white shadow-card">
+                <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3" />
+                  <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4" />
+                  <circle cx="20" cy="10" r="2" />
+                </svg>
+              </span>
+              <span
+                class="rounded-full bg-plum-100 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-ink">Mais
+                procurado</span>
+            </div>
+            <h3 class="mt-6 font-display text-2xl font-extrabold leading-tight lg:text-3xl">Serviços Profissionais</h3>
+            <p class="mt-3 text-ink-soft">Banho, tosa, veterinária, creche e treinamento — tudo com equipe treinada em
+              manejo de baixo estresse.</p>
+            <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-plum-100 text-plum-600"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Banho &amp; Tosa</li>
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-plum-100 text-plum-600"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Veterinária</li>
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-plum-100 text-plum-600"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Creche &amp; Hospedagem</li>
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-plum-100 text-plum-600"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Treinamento</li>
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-plum-100 text-plum-600"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Táxi para Pets</li>
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-plum-100 text-plum-600"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Farmácia veterinária</li>
+            </ul>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a href="servicos.html"
+                class="inline-flex items-center justify-center gap-2 rounded-full bg-plum-600 px-7 py-4 font-bold text-white shadow-card transition hover:bg-plum-700">
+                Ver todos os serviços
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <span class="text-xs font-medium text-ink-soft">A partir de R$ 40</span>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="group relative flex flex-col overflow-hidden rounded-4xl border border-brand-200 bg-gradient-to-br from-brand-50 via-white to-white p-8 shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-soft lg:p-10">
+          <div class="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-brand-200/60 blur-3xl">
+          </div>
+          <div class="relative">
+            <div class="flex items-start justify-between gap-4">
+              <span class="grid h-16 w-16 place-items-center rounded-2xl bg-brand-500 text-white shadow-card">
+                <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                  <path d="M3 6h18M16 10a4 4 0 0 1-8 0" />
+                </svg>
+              </span>
+              <span
+                class="rounded-full bg-brand-100 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-ink">Curadoria
+                da equipe</span>
+            </div>
+            <h3 class="mt-6 font-display text-2xl font-extrabold leading-tight lg:text-3xl">Loja de Produtos</h3>
+            <p class="mt-3 text-ink-soft">Ração premium, brinquedos, camas ortopédicas e essenciais — tudo testado e
+              aprovado pelos nossos próprios pets.</p>
+            <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-brand-100 text-brand-500"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Ração premium</li>
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-brand-100 text-brand-500"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Brinquedos</li>
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-brand-100 text-brand-500"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Camas &amp; conforto</li>
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-brand-100 text-brand-500"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Higiene &amp; grooming</li>
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-brand-100 text-brand-500"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Acessórios</li>
+              <li class="flex items-center gap-2.5 text-sm"><span
+                  class="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-brand-100 text-brand-500"><svg
+                    class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg></span>Farmácia pet</li>
+            </ul>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a href="loja.html"
+                class="inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-7 py-4 font-bold text-white shadow-card transition hover:bg-brand-600">
+                Explorar a loja
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <span class="text-xs font-medium text-ink-soft">Retirada na loja física</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="bg-white py-20 lg:py-24">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <span
+          class="inline-block rounded-full bg-brand-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-ink">Reviews</span>
+        <h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">Amada por pets e tutores</h2>
+      </div>
+
+      <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <figure class="flex flex-col rounded-2xl border border-ink/5 bg-cream p-5 shadow-card">
+          <div class="flex items-center justify-between">
+            <div class="flex gap-0.5 text-plum-500">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold text-ink-soft">5.0</span>
+          </div>
+          <blockquote class="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">“Meu cachorro ansioso costumava tremer
+            na tosa. Aqui ele balança o rabinho na porta — nunca vi ele tão relaxado.”</blockquote>
+          <figcaption class="mt-4 flex items-center gap-2.5">
+            <span
+              class="grid h-9 w-9 place-items-center rounded-full bg-brand-200 text-[11px] font-bold text-ink">AM</span>
+            <div class="leading-tight">
+              <p class="text-sm font-bold text-ink">Ana Martins</p>
+              <p class="text-[11px] text-ink-soft">Nina · Golden</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="flex flex-col rounded-2xl border border-ink/5 bg-cream p-5 shadow-card">
+          <div class="flex items-center justify-between">
+            <div class="flex gap-0.5 text-plum-500">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold text-ink-soft">5.0</span>
+          </div>
+          <blockquote class="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">“A equipe veterinária achou um problema
+            dental que outra clínica ignorou por dois anos. Preços claros, sem venda adicional.”</blockquote>
+          <figcaption class="mt-4 flex items-center gap-2.5">
+            <span
+              class="grid h-9 w-9 place-items-center rounded-full bg-brand-300 text-[11px] font-bold text-ink">MK</span>
+            <div class="leading-tight">
+              <p class="text-sm font-bold text-ink">Marcus Kim</p>
+              <p class="text-[11px] text-ink-soft">Theo · Bulldog</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure
+          class="flex flex-col rounded-2xl border border-ink/5 bg-cream p-5 shadow-card md:col-span-2 lg:col-span-1">
+          <div class="flex items-center justify-between">
+            <div class="flex gap-0.5 text-plum-500">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2Z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold text-ink-soft">5.0</span>
+          </div>
+          <blockquote class="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">“Viajamos muito e o alojamento é escolha
+            fácil. Atualizações diárias de fotos e nosso gato volta calmo, não estressado.”</blockquote>
+          <figcaption class="mt-4 flex items-center gap-2.5">
+            <span
+              class="grid h-9 w-9 place-items-center rounded-full bg-plum-500 text-[11px] font-bold text-white">RS</span>
+            <div class="leading-tight">
+              <p class="text-sm font-bold text-ink">Renata Souza</p>
+              <p class="text-[11px] text-ink-soft">Mia · Gato Persa</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-20 lg:py-28">
+    <div class="mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-[minmax(0,380px)_1fr] lg:gap-20 lg:px-8">
+      <div class="lg:sticky lg:top-28 lg:self-start">
+        <span
+          class="inline-block rounded-full bg-brand-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-ink">FAQ</span>
+        <h2 class="mt-4 font-display text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">Perguntas? Nós temos
+          respostas</h2>
+        <p class="mt-5 text-lg text-ink-soft">Não consegue encontrar o que está procurando? Nossa equipe responde em
+          alguns minutos.</p>
+        <a href="#booking"
+          class="mt-7 inline-flex items-center gap-2 rounded-full border-2 border-ink/10 bg-white px-7 py-3.5 font-bold text-ink transition hover:border-ink/25">
+          Fale com a equipe
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group rounded-2xl border border-ink/5 bg-white p-6 shadow-card" open>
+          <summary class="flex cursor-pointer items-center justify-between gap-6 font-bold">
+            Preciso de um agendamento ou posso ir diretamente?
+            <svg class="h-5 w-5 shrink-0 text-ink transition-transform duration-300 group-open:rotate-45"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </summary>
+          <p class="mt-4 leading-relaxed text-ink-soft">Chegadas sem agendamento são bem-vindas para a loja e corte
+            rápido de unhas. Para tosa, consultas veterinárias, treinamento e alojamento recomendamos agendar com
+            antecedência — isso garante seu horário preferido.</p>
+        </details>
+
+        <details class="group rounded-2xl border border-ink/5 bg-white p-6 shadow-card">
+          <summary class="flex cursor-pointer items-center justify-between gap-6 font-bold">
+            Quanto tempo dura a tosa?
+            <svg class="h-5 w-5 shrink-0 text-ink transition-transform duration-300 group-open:rotate-45"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </summary>
+          <p class="mt-4 leading-relaxed text-ink-soft">Depende da raça, condição da pelagem e tamanho. Um cão pequeno
+            de pelo curto leva cerca de 1 hora; raças grandes ou com duplo focinho podem levar 2.5–3 horas.</p>
+        </details>
+
+        <details class="group rounded-2xl border border-ink/5 bg-white p-6 shadow-card">
+          <summary class="flex cursor-pointer items-center justify-between gap-6 font-bold">
+            As vacinas são necessárias para daycare e alojamento?
+            <svg class="h-5 w-5 shrink-0 text-ink transition-transform duration-300 group-open:rotate-45"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </summary>
+          <p class="mt-4 leading-relaxed text-ink-soft">Sim. Requerimos vacinas atualizadas contra raiva, poliomielite e
+            Bordetella, além de um teste de fezes negativo nos últimos 6 meses.</p>
+        </details>
+
+        <details class="group rounded-2xl border border-ink/5 bg-white p-6 shadow-card">
+          <summary class="flex cursor-pointer items-center justify-between gap-6 font-bold">
+            Vocês têm um serviço de táxi para animais de estimação?
+            <svg class="h-5 w-5 shrink-0 text-ink transition-transform duration-300 group-open:rotate-45"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </summary>
+          <p class="mt-4 leading-relaxed text-ink-soft">Temos! Coleta e entrega dentro de um raio de 10 km, em veículos
+            com ar condicionado com atendentes treinados e gaiolas seguras.</p>
+        </details>
+
+        <details class="group rounded-2xl border border-ink/5 bg-white p-6 shadow-card">
+          <summary class="flex cursor-pointer items-center justify-between gap-6 font-bold">
+            Quais métodos de pagamento vocês aceitam?
+            <svg class="h-5 w-5 shrink-0 text-ink transition-transform duration-300 group-open:rotate-45"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </summary>
+          <p class="mt-4 leading-relaxed text-ink-soft">Todos os cartões de crédito e débito principais, dinheiro, Pix e
+            transferência bancária. Também oferecemos planos mensais de bem-estar.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="pb-20 lg:pb-28">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8">
+      <div class="relative overflow-hidden rounded-4xl bg-ink px-6 py-16 text-center sm:px-12 lg:py-24">
+        <div class="pointer-events-none absolute -left-16 -top-16 h-64 w-64 rounded-full bg-plum-600/30 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-20 -right-10 h-72 w-72 rounded-full bg-brand-500/25 blur-3xl">
+        </div>
+
+        <div class="relative mx-auto max-w-2xl">
+          <span
+            class="inline-block rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-200">Agende
+            em 60 segundos</span>
+          <h2 class="mt-5 font-display text-3xl font-extrabold leading-tight text-white sm:text-4xl lg:text-5xl">Pronto
+            para mimar seu melhor amigo?</h2>
+          <p class="mx-auto mt-5 max-w-xl text-lg text-white/70">
+            Escolha um serviço, selecione um horário e nós nos encarregamos do resto. Clientes que visitam pela primeira
+            vez recebem <span class="font-bold text-brand-300">15% de desconto</span> em qualquer pacote de tosa.
+          </p>
+
+          <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+            <a href="#"
+              class="inline-flex items-center justify-center gap-2 rounded-full bg-plum-600 px-8 py-4 font-bold text-white shadow-soft transition hover:bg-plum-500">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M16 2v4M8 2v4M3 10h18" />
+              </svg>
+              Agendar uma visita
+            </a>
+            <a href="https://wa.me/5551234567" target="_blank" rel="noopener"
+              class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/20 px-8 py-4 font-bold text-white transition hover:border-white/50 hover:bg-white/5">
+              Fale no WhatsApp
+            </a>
+          </div>
+          <p class="mt-7 text-sm text-white/50">Seg–Sáb, 8h – 19h · Estacionamento gratuito no local · Linha de
+            emergência 24/7</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-ink/5 bg-ink text-white/70">
+    <div class="mx-auto max-w-7xl px-5 py-16 lg:px-8">
+      <div class="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.4fr]">
+
+        <div>
+          <a href="index.html" class="flex items-center gap-2.5">
+            <span class="grid h-11 w-11 place-items-center rounded-2xl bg-plum-600 text-white">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 13.5c-2.6 0-5.3 1.9-5.3 4.2 0 1.4 1 2.3 2.4 2.3 1 0 1.9-.5 2.9-.5s1.9.5 2.9.5c1.4 0 2.4-.9 2.4-2.3 0-2.3-2.7-4.2-5.3-4.2Z" />
+                <ellipse cx="6.2" cy="10.4" rx="2" ry="2.6" />
+                <ellipse cx="17.8" cy="10.4" rx="2" ry="2.6" />
+                <ellipse cx="9.6" cy="6.4" rx="2.1" ry="2.7" />
+                <ellipse cx="14.4" cy="6.4" rx="2.1" ry="2.7" />
+              </svg>
+            </span>
+            <span class="font-display text-2xl font-extrabold text-white">Do Pet <span class="text-brand-400">Au
+                Vet</span></span>
+          </a>
+          <p class="mt-5 max-w-xs text-sm leading-relaxed">
+            Clínica veterinária e petshop no coração da Jatiúca. Cuidado, amor e bem-estar — tudo em um só lugar.
+          </p>
+          <div class="mt-6 flex gap-3">
+            <a href="https://instagram.com/dopetauvet" target="_blank" rel="noopener" aria-label="Instagram"
+              class="grid h-10 w-10 place-items-center rounded-xl bg-white/5 transition hover:bg-plum-600 hover:text-white">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="https://wa.me/5551234567" target="_blank" rel="noopener" aria-label="WhatsApp"
+              class="grid h-10 w-10 place-items-center rounded-xl bg-white/5 transition hover:bg-plum-600 hover:text-white">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.5-5.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-display text-lg font-bold text-white">Serviços</h3>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a href="servicos.html#banho" class="transition hover:text-brand-300">Banho &amp; Tosa</a></li>
+            <li><a href="servicos.html#veter" class="transition hover:text-brand-300">Cuidados Veterinários</a></li>
+            <li><a href="servicos.html#daycare" class="transition hover:text-brand-300">Creche &amp; Hospedagem</a></li>
+            <li><a href="servicos.html#training" class="transition hover:text-brand-300">Treinamento</a></li>
+            <li><a href="servicos.html#taxi" class="transition hover:text-brand-300">Táxi para Pets</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-display text-lg font-bold text-white">Empresa</h3>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a href="index.html" class="transition hover:text-brand-300">Início</a></li>
+            <li><a href="loja.html" class="transition hover:text-brand-300">Loja</a></li>
+            <li><a href="#testimonials" class="transition hover:text-brand-300">Avaliações</a></li>
+            <li><a href="#faq" class="transition hover:text-brand-300">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-display text-lg font-bold text-white">Contato</h3>
+          <ul class="mt-5 space-y-3.5 text-sm">
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Rua Estudante Carlos Moura Gama, 123, Jatiúca
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" />
+              </svg>
+              (555) 123-4567
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m2 7 10 6 10-6" />
+              </svg>
+              email@dopetauvet.com
+            </li>
+          </ul>
+
+          <form class="mt-6" action="https://formspree.io/f/SEU_ID" method="POST">
+            <label for="newsletter" class="text-xs font-bold uppercase tracking-widest text-white/50">Newsletter</label>
+            <div class="mt-2 flex gap-2">
+              <input id="newsletter" name="email" type="email" required placeholder="seu@email.com"
+                class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/35 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500/30" />
+              <button type="submit"
+                class="shrink-0 rounded-xl bg-plum-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-plum-500">
+                Inscrever-se
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm sm:flex-row">
+        <p>© 2026 Do Pet Au Vet. Todos os direitos reservados.</p>
+        <div class="flex gap-6">
+          <a href="#" class="transition hover:text-brand-300">Política de Privacidade</a>
+          <a href="#" class="transition hover:text-brand-300">Termos de Serviço</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+      (function () {
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('icon-open');
+        const iconClose = document.getElementById('icon-close');
+        if (!btn || !menu) return;
+
+        function closeMenu() {
+          menu.classList.add('hidden');
+          iconOpen.classList.remove('hidden');
+          iconClose.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+
+        btn.addEventListener('click', function () {
+          const isHidden = menu.classList.toggle('hidden');
+          const isOpen = !isHidden;
+          iconOpen.classList.toggle('hidden', isOpen);
+          iconClose.classList.toggle('hidden', !isOpen);
+          btn.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        menu.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', closeMenu);
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeMenu();
+        });
+      })();
+  </script>
+
+</body>
+
+</html>
